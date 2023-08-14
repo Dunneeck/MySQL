@@ -24,7 +24,7 @@ FROM sales;
 CREATE TABLE if not exists orders (
   id INT PRIMARY KEY AUTO_INCREMENT,
   employee_id varchar(45),
-  amount double,
+  amount decimal,
   order_status varchar(45)
 );
 insert into orders (employee_id, amount, order_status) value
